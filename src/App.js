@@ -1,10 +1,15 @@
 import { Typography } from '@mui/material';
 import './App.css';
+import Home from './components/Home';
+import MidSection from './components/MidSection';
+import UniqueAvatars from './components/UniqueAvatars';
 
 function App() {
   return (
     <div className="App">
-      <Typography variant="h1">Hello</Typography>
+      <Home />
+      <MidSection />
+      <UniqueAvatars />
     </div>
   );
 }
