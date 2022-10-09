@@ -8,7 +8,7 @@ const Avatars = ({ item }) => {
     <Box
       sx={{
         height: '350px',
-        width: '200px',
+        width: '220px',
       }}
       onMouseEnter={() => setIsHover(true)}
       onMouseLeave={() => setIsHover(false)}
@@ -17,7 +17,7 @@ const Avatars = ({ item }) => {
         <img
           src={item.gif}
           alt=""
-          style={{ height: '100%', objectFit: 'cover' }}
+          style={{ height: '100%', objectFit: 'cover', width: '220px' }}
         />
       ) : (
         <img
