@@ -50,7 +50,7 @@ const UniqueAvatars = () => {
           A CHANCE TO GET UNIQUE AVATARS
         </Typography>
       </Box>
-      <Typography variant="body1" gutterBottom>
+      <Typography variant="body1" gutterBottom sx={{ color: '#BDC0C2' }}>
         First-ever avatar to be part of a metaverse music video. Unique,
         hand-crafted, and playable Doggies coming to The Sandbox. Designed and
         crafted with tha Doggfather himself.
@@ -59,11 +59,16 @@ const UniqueAvatars = () => {
         <Grid container spacing={4}>
           {uitems.map((item) => (
             <Grid item xs={12} lg={4}>
-              <Box>
+              <Box
+                sx={{
+                  display: 'flex',
+                  flexDirection: 'column',
+                  alignItems: 'center',
+                }}
+              >
                 <Box
                   sx={{
                     background: '#f37a0e',
-
                     borderRadius: '36px',
                     width: '250px',
                     height: '250px',
@@ -81,6 +86,24 @@ const UniqueAvatars = () => {
                       style={{ width: '100%', objectFit: 'cover' }}
                     />
                   </Box>
+                </Box>
+                <Box sx={{ mt: '40px' }}>
+                  <Typography
+                    variant="h3"
+                    sx={{ color: '#f37a0e', fontWeight: '600' }}
+                  >
+                    {item.title1}
+                  </Typography>
+                  <Typography
+                    variant="h3"
+                    sx={{ color: '#fff', fontWeight: '600' }}
+                    gutterBottom
+                  >
+                    {item.title2}
+                  </Typography>
+                  <Typography variant="body1" sx={{ color: '#BDC0C2' }}>
+                    {item.details}
+                  </Typography>
                 </Box>
               </Box>
             </Grid>

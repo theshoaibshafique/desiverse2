@@ -26,7 +26,7 @@ const MidSection = () => {
               >
                 THE DOGGIES?
               </Typography>
-              <Typography variant="bod1">
+              <Typography variant="body1" sx={{ color: '#BDC0C2' }}>
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque
                 velit, facere magni provident architecto quidem sint inventore
                 magnam quia amet dicta officia, eum accusantium distinctio,
@@ -83,23 +83,25 @@ const MidSection = () => {
                 The Doggies are SOLD OUT! Head over to OpenSea and explore all
                 available avatars for sale.
               </Typography>
-              <Link
-                href="#"
-                target="_blank"
-                underline="none"
-                sx={{
-                  background: 'black',
-                  width: 'fit-content',
-                  color: 'white',
-                  cursor: 'pointer',
-                  p: { xs: '10px 20px', lg: '15px 40px' },
-                  borderRadius: '99px',
-                  fontWeight: 'bold',
-                  mt: '15px',
-                }}
-              >
-                GO TO OPEN SEA
-              </Link>
+              <Box sx={{ mt: '20px' }}>
+                <Link
+                  href="#"
+                  target="_blank"
+                  underline="none"
+                  sx={{
+                    background: 'black',
+                    width: 'fit-content',
+                    color: 'white',
+                    cursor: 'pointer',
+                    p: { xs: '10px 20px', lg: '15px 40px' },
+                    borderRadius: '99px',
+                    fontWeight: 'bold',
+                    mt: '15px',
+                  }}
+                >
+                  GO TO OPEN SEA
+                </Link>
+              </Box>
             </Box>
           </Grid>
           <Grid
