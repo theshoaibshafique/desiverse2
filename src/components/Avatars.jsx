@@ -7,7 +7,8 @@ const Avatars = ({ item }) => {
   return (
     <Box
       sx={{
-        height: '400px',
+        height: '350px',
+        width: '200px',
       }}
       onMouseEnter={() => setIsHover(true)}
       onMouseLeave={() => setIsHover(false)}
