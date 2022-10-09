@@ -1,4 +1,3 @@
-import { Typography } from '@mui/material';
 import './App.css';
 import Home from './components/Home';
 import MidSection from './components/MidSection';
