@@ -6,21 +6,24 @@ const UniqueAvatars = () => {
     {
       title1: 'Dope',
       title2: 'AVATARS',
-      img: 'uavat.gif',
+      img1: 'img/man.gif',
+      img2: 'img/women.gif',
       details:
         'A set of dope, fresh & funky avatars which have been custom designed by the teams at The Sandbox and Snoop Dogg himself. Only one exists of each, who will be the lucky one?',
     },
     {
       title1: 'Dope',
       title2: 'AVATARS',
-      img: 'uavat.gif',
+      img1: 'img/horse.gif',
+      img2: 'img/horse.gif',
       details:
         'A set of dope, fresh & funky avatars which have been custom designed by the teams at The Sandbox and Snoop Dogg himself. Only one exists of each, who will be the lucky one?',
     },
     {
       title1: 'Dope',
       title2: 'AVATARS',
-      img: 'uavat.gif',
+      img1: 'img/riksha.gif',
+      img2: 'img/truck.gif',
       details:
         'A set of dope, fresh & funky avatars which have been custom designed by the teams at The Sandbox and Snoop Dogg himself. Only one exists of each, who will be the lucky one?',
     },
@@ -70,18 +73,22 @@ const UniqueAvatars = () => {
                   sx={{
                     background: '#f37a0e',
                     borderRadius: '36px',
-                    width: '250px',
-                    height: '250px',
+                    width: '300px',
+
+                    display: 'flex',
+                    justifyContent: 'center',
                   }}
                 >
-                  <Box
-                    sx={{
-                      width: '300px',
-                      height: '320px',
-                    }}
-                  >
+                  <Box>
                     <img
-                      src={item.img}
+                      src={item.img1}
+                      alt=""
+                      style={{ width: '100%', objectFit: 'cover' }}
+                    />
+                  </Box>
+                  <Box>
+                    <img
+                      src={item.img2}
                       alt=""
                       style={{ width: '100%', objectFit: 'cover' }}
                     />

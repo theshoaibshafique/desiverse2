@@ -81,7 +81,7 @@ const Home = () => {
           Sandbox. Designed and crafted with tha Doggfather himself.
         </Typography>
       </Box>
-      <Box
+      {/* <Box
         sx={{
           maxWidth: { xs: '350px', lg: '935px' },
           position: 'absolute',
@@ -98,7 +98,7 @@ const Home = () => {
           //   height="535px"
           width="100%"
         ></video>
-      </Box>
+      </Box> */}
     </Box>
   );
 };

@@ -1,4 +1,4 @@
-import { Box, Grid, Link, Typography } from '@mui/material';
+import { Box, Grid, Typography } from '@mui/material';
 import React from 'react';
 
 const MidSection = () => {
@@ -7,7 +7,8 @@ const MidSection = () => {
       <Box
         sx={{
           //   paddingTop: { xs: '120px', lg: '300px' },
-          p: { xs: '120px 10px 0px', lg: '250px 300px 0px' },
+          // p: { xs: '120px 10px 0px', lg: '250px 300px 0px' },
+          p: { xs: '40px 10px ', lg: '60px 300px' },
           background: '#1d232a',
         }}
       >
@@ -51,7 +52,7 @@ const MidSection = () => {
 
       {/* ===================================================================================================== */}
 
-      <Box
+      {/* <Box
         sx={{
           //   paddingTop: { xs: '120px', lg: '300px' },
           p: { xs: '40px 10px ', lg: '90px 300px ' },
@@ -126,7 +127,7 @@ const MidSection = () => {
             </Box>
           </Grid>
         </Grid>
-      </Box>
+      </Box> */}
     </Box>
   );
 };

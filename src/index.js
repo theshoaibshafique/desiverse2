@@ -9,11 +9,9 @@ import {
 } from '@mui/material/styles';
 import CssBaseline from '@mui/material/CssBaseline';
 
-const mode = 'dark';
-
 let theme = createTheme({
   palette: {
-    mode: mode,
+    mode: 'dark',
     // ...(mode === 'dark'
     //   ? {
     //       divider: '#1E2D3D',
@@ -23,6 +21,11 @@ let theme = createTheme({
     //       },
     //     }
     //   : {}),
+    warning: {
+      main: '#f37a0e',
+      dark: '#f37a0e',
+      light: '#f37a0e',
+    },
   },
 
   typography: {

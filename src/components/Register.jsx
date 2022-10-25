@@ -9,14 +9,15 @@ import {
 } from '@mui/material';
 import React from 'react';
 import CircleIcon from '@mui/icons-material/Circle';
+import RegisterForm from './RegisterForm';
 
-const Register = () => {
+const Register = ({ currentAccount, connectWalletAction }) => {
   return (
     <Box
       id="desiverse"
       sx={{
         background: '#1d232a',
-        p: { xs: '40px 10px 0px', lg: '80px 250px 0px' },
+        p: { xs: '40px 10px 20px', lg: '80px 250px 40px' },
         textAlign: 'center',
       }}
     >
@@ -68,6 +69,40 @@ const Register = () => {
                   </ListItem>
                 ))}
               </List>
+            </Box>
+          </Box>
+        </Grid>
+
+        <Grid item xs={12} lg={6}>
+          <Box
+            sx={{
+              background: '#000',
+              borderRadius: '25px',
+              p: { xs: '10px', lg: '40px' },
+              height: '100%',
+            }}
+          >
+            <Box sx={{ mb: '20px' }}>
+              <img
+                src="https://www.sandbox.game/img/30_Landing/raffle-doggies/ticket2.png"
+                alt=""
+                style={{ width: '100%', objectFit: 'cover' }}
+              />
+            </Box>
+            <Box>
+              <Typography
+                variant="h4"
+                sx={{ color: '#fff', fontWeight: 'bold' }}
+                gutterBottom
+              >
+                Register
+              </Typography>
+            </Box>
+            <Box>
+              <RegisterForm
+                currentAccount={currentAccount}
+                connectWalletAction={connectWalletAction}
+              />
             </Box>
           </Box>
         </Grid>
