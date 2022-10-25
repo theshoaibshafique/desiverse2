@@ -59,7 +59,7 @@ const UniqueAvatars = () => {
         crafted with tha Doggfather himself.
       </Typography>
       <Box sx={{ mt: '50px' }}>
-        <Grid container spacing={4}>
+        <Grid container spacing={2}>
           {uitems.map((item) => (
             <Grid item xs={12} lg={4}>
               <Box
@@ -73,7 +73,7 @@ const UniqueAvatars = () => {
                   sx={{
                     background: '#f37a0e',
                     borderRadius: '36px',
-                    width: '300px',
+                    width: '280px',
 
                     display: 'flex',
                     justifyContent: 'center',
