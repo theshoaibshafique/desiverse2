@@ -70,7 +70,7 @@ const UniqueAvatars = () => {
                   sx={{
                     background: '#f37a0e',
                     borderRadius: '36px',
-                    height: '220px',
+
                     display: 'flex',
                     justifyContent: 'center',
                   }}
@@ -82,7 +82,6 @@ const UniqueAvatars = () => {
                       style={{
                         width: '100%',
                         objectFit: 'cover',
-                        height: '200px',
                       }}
                     />
                   </Box>
