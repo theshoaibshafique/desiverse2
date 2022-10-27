@@ -62,7 +62,7 @@ const Home = () => {
       </Box>
       <Box sx={{ display: { xs: 'block', lg: 'none' }, width: '300px' }}>
         <img
-          src="img/allchar.jpeg  "
+          src="img/allcharacters.gif  "
           alt=""
           style={{ width: '100%', objectFit: 'cover' }}
         />

@@ -12,7 +12,14 @@ const MidSection = () => {
           background: '#1d232a',
         }}
       >
-        <Grid container sx={{ display: 'flex', alignItems: 'center' }}>
+        <Grid
+          container
+          sx={{
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+          }}
+        >
           <Grid item xs={12} lg={6}>
             <Box sx={{ mt: '30px', textAlign: { xs: 'center', lg: 'left' } }}>
               <Typography

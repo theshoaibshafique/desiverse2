@@ -70,7 +70,6 @@ const UniqueAvatars = () => {
                   sx={{
                     background: '#f37a0e',
                     borderRadius: '36px',
-
                     display: 'flex',
                     justifyContent: 'center',
                   }}
