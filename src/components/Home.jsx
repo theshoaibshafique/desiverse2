@@ -54,6 +54,7 @@ const Home = () => {
           alignItems: 'center',
           justifyContent: 'center',
           gap: '40px',
+          height: '250px',
         }}
       >
         {avatarsList.map((item) => (
