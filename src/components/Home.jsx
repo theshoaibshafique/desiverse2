@@ -62,7 +62,7 @@ const Home = () => {
       </Box>
       <Box sx={{ display: { xs: 'block', lg: 'none' }, width: '300px' }}>
         <img
-          src="https://www.sandbox.game/img/30_Landing/raffle-doggies/multisnoop-mobile.png  "
+          src="img/allchar.jpeg  "
           alt=""
           style={{ width: '100%', objectFit: 'cover' }}
         />

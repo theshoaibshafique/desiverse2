@@ -6,24 +6,21 @@ const UniqueAvatars = () => {
     {
       title1: 'Dope',
       title2: 'AVATARS',
-      img1: 'img/man.gif',
-      img2: 'img/women.gif',
+      img: 'img/uavat-1.gif',
       details:
         'A set of dope, fresh & funky avatars which have been custom designed by the teams at The Sandbox and Snoop Dogg himself. Only one exists of each, who will be the lucky one?',
     },
     {
       title1: 'Dope',
       title2: 'AVATARS',
-      img1: 'img/horse.gif',
-      img2: 'img/horse.gif',
+      img: 'img/uavat-2.gif',
       details:
         'A set of dope, fresh & funky avatars which have been custom designed by the teams at The Sandbox and Snoop Dogg himself. Only one exists of each, who will be the lucky one?',
     },
     {
       title1: 'Dope',
       title2: 'AVATARS',
-      img1: 'img/riksha.gif',
-      img2: 'img/truck.gif',
+      img: 'img/uavat-3.gif',
       details:
         'A set of dope, fresh & funky avatars which have been custom designed by the teams at The Sandbox and Snoop Dogg himself. Only one exists of each, who will be the lucky one?',
     },
@@ -73,24 +70,20 @@ const UniqueAvatars = () => {
                   sx={{
                     background: '#f37a0e',
                     borderRadius: '36px',
-                    width: '280px',
-
+                    height: '220px',
                     display: 'flex',
                     justifyContent: 'center',
                   }}
                 >
                   <Box>
                     <img
-                      src={item.img1}
+                      src={item.img}
                       alt=""
-                      style={{ width: '100%', objectFit: 'cover' }}
-                    />
-                  </Box>
-                  <Box>
-                    <img
-                      src={item.img2}
-                      alt=""
-                      style={{ width: '100%', objectFit: 'cover' }}
+                      style={{
+                        width: '100%',
+                        objectFit: 'cover',
+                        height: '200px',
+                      }}
                     />
                   </Box>
                 </Box>

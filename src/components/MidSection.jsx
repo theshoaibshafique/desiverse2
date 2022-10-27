@@ -12,7 +12,7 @@ const MidSection = () => {
           background: '#1d232a',
         }}
       >
-        <Grid container>
+        <Grid container sx={{ display: 'flex', alignItems: 'center' }}>
           <Grid item xs={12} lg={6}>
             <Box sx={{ mt: '30px', textAlign: { xs: 'center', lg: 'left' } }}>
               <Typography
@@ -37,14 +37,11 @@ const MidSection = () => {
           </Grid>
           <Grid item xs={12} lg={6}>
             <Box>
-              <video
-                src="https://installers.sandbox.game/SnoopWebDance_3_4_1.mp4"
-                autoplay="autoplay"
-                loop="loop"
-                muted="muted"
-                playsinline
-                width="100%"
-              ></video>
+              <img
+                src="img/allcharacters.gif"
+                alt=""
+                style={{ width: '90%', objectFit: 'cover' }}
+              />
             </Box>
           </Grid>
         </Grid>
