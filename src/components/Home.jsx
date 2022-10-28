@@ -1,36 +1,36 @@
-import { Box, Typography } from '@mui/material';
+import { Box } from '@mui/material';
 import React from 'react';
-import Avatars from './Avatars';
+// import Avatars from './Avatars';
 import Header from './Header';
 
 const Home = () => {
-  const avatarsList = [
-    {
-      id: 1,
-      img: 'img/horse.png',
-      gif: 'img/horse.gif',
-    },
-    {
-      id: 2,
-      img: 'img/man.png',
-      gif: 'img/man.gif',
-    },
-    {
-      id: 3,
-      img: 'img/woman.png',
-      gif: 'img/women.gif',
-    },
-    {
-      id: 4,
-      img: 'img/riksha.png',
-      gif: 'img/riksha.gif',
-    },
-    {
-      id: 5,
-      img: 'img/truck.png',
-      gif: 'img/truck.gif',
-    },
-  ];
+  // const avatarsList = [
+  //   {
+  //     id: 1,
+  //     img: 'img/horse.png',
+  //     gif: 'img/horse.gif',
+  //   },
+  //   {
+  //     id: 2,
+  //     img: 'img/man.png',
+  //     gif: 'img/man.gif',
+  //   },
+  //   {
+  //     id: 3,
+  //     img: 'img/woman.png',
+  //     gif: 'img/women.gif',
+  //   },
+  //   {
+  //     id: 4,
+  //     img: 'img/riksha.png',
+  //     gif: 'img/riksha.gif',
+  //   },
+  //   {
+  //     id: 5,
+  //     img: 'img/truck.png',
+  //     gif: 'img/truck.gif',
+  //   },
+  // ];
   return (
     <Box
       id="#home"
