@@ -38,28 +38,33 @@ const Home = () => {
         display: 'flex',
         flexDirection: 'column',
         alignItems: 'center',
-        // backgroundImage:
-        //   'url(https://www.sandbox.game//img/30_Landing/raffle-doggies/bg-header-avatar.jpg)',
-        backgroundImage: 'url(BG-2400.png)',
-        backgroundRepeat: 'no-repeat',
-        textAlign: 'center',
-        position: 'relative',
-        backgroundSize: 'cover',
+
+        // backgroundImage: 'url(BG-2400.png)',
+        // backgroundRepeat: 'no-repeat',
+        // textAlign: 'center',
+        // position: 'relative',
+        // backgroundSize: 'cover',
       }}
     >
       <Header />
       <Box
         sx={{
-          display: { xs: 'none', lg: 'flex' },
-          alignItems: 'center',
-          justifyContent: 'center',
-          gap: '40px',
-          height: '250px',
+          // display: { xs: 'none', lg: 'flex' },
+          // alignItems: 'center',
+          // justifyContent: 'center',
+          // gap: '40px',
+
+          width: '100%',
         }}
       >
-        {avatarsList.map((item) => (
+        {/* {avatarsList.map((item) => (
           <Avatars item={item} key={item.id} />
-        ))}
+        ))} */}
+        <img
+          src="img/home_banner.gif"
+          alt="home_banner"
+          style={{ width: '100%', objectFit: 'cover' }}
+        />
       </Box>
       <Box sx={{ display: { xs: 'block', lg: 'none' }, width: '300px' }}>
         <img
@@ -68,7 +73,7 @@ const Home = () => {
           style={{ width: '100%', objectFit: 'cover' }}
         />
       </Box>
-      <Box
+      {/* <Box
         sx={{ maxWidth: '800px', mt: '40px', mb: { xs: '170px', lg: '330px' } }}
       >
         <Typography variant="h3" sx={{ fontWeight: 'bold' }}>
@@ -81,7 +86,7 @@ const Home = () => {
           Unique, hand-crafted, and playable The Doggies are coming to The
           Sandbox. Designed and crafted with tha Doggfather himself.
         </Typography>
-      </Box>
+      </Box> */}
       {/* <Box
         sx={{
           maxWidth: { xs: '350px', lg: '935px' },

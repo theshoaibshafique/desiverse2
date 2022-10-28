@@ -32,9 +32,9 @@ const Register = ({ currentAccount, connectWalletAction }) => {
           >
             <Box sx={{ mb: '20px' }}>
               <img
-                src="https://www.sandbox.game/img/30_Landing/raffle-doggies/ticket2.png"
+                src="img/founder-pass.png"
                 alt=""
-                style={{ width: '100%', objectFit: 'cover' }}
+                style={{ width: '58%', objectFit: 'cover' }}
               />
             </Box>
             <Box>

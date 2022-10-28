@@ -72,7 +72,7 @@ const UniqueAvatars = () => {
                     borderRadius: '36px',
                     display: 'flex',
                     justifyContent: 'center',
-                    height: '250px',
+                    height: { xs: '320px', lg: '250px' },
                   }}
                 >
                   <Box>
