@@ -54,9 +54,9 @@ const Header = () => {
           </Link>
         ))}
       </Box>
-      <Box>
+      {/* <Box>
         <img src="desiverse-logo.png" alt="" />
-      </Box>
+      </Box> */}
     </Box>
   );
 };

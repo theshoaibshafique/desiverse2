@@ -39,32 +39,36 @@ const Home = () => {
         flexDirection: 'column',
         alignItems: 'center',
 
-        // backgroundImage: 'url(BG-2400.png)',
-        // backgroundRepeat: 'no-repeat',
-        // textAlign: 'center',
-        // position: 'relative',
-        // backgroundSize: 'cover',
+        backgroundImage: 'url(BG-2400.png)',
+        backgroundRepeat: 'no-repeat',
+        textAlign: 'center',
+        position: 'relative',
+        backgroundSize: 'cover',
       }}
     >
       <Header />
       <Box
         sx={{
-          // display: { xs: 'none', lg: 'flex' },
-          // alignItems: 'center',
-          // justifyContent: 'center',
-          // gap: '40px',
-
-          width: '100%',
+          display: { xs: 'none', lg: 'flex' },
+          alignItems: 'center',
+          justifyContent: 'center',
+          gap: '100px',
+          mt: '60px',
         }}
       >
         {/* {avatarsList.map((item) => (
           <Avatars item={item} key={item.id} />
         ))} */}
-        <img
-          src="img/home_banner.gif"
-          alt="home_banner"
-          style={{ width: '100%', objectFit: 'cover' }}
-        />
+        <Box>
+          <img
+            src="img/allcharacters.gif  "
+            alt=""
+            style={{ width: '100%', objectFit: 'cover' }}
+          />
+        </Box>
+        <Box>
+          <img src="desiverse-logo.png" alt="" />
+        </Box>
       </Box>
       <Box sx={{ display: { xs: 'block', lg: 'none' }, width: '300px' }}>
         <img
