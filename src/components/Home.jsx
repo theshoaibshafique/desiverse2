@@ -1,4 +1,4 @@
-import { Box } from '@mui/material';
+import { Box, Grid } from '@mui/material';
 import React from 'react';
 // import Avatars from './Avatars';
 import Header from './Header';
@@ -55,26 +55,81 @@ const Home = () => {
           alignItems: 'center',
           justifyContent: 'center',
           gap: '100px',
-          mt: '60px',
+          mt: '20px',
         }}
       >
         {/* {avatarsList.map((item) => (
           <Avatars item={item} key={item.id} />
         ))} */}
-        <Box>
-          <img
-            src="img/truck.gif  "
-            alt=""
-            style={{ width: '100%', objectFit: 'cover' }}
-          />
-        </Box>
-        <Box sx={{ width: '500px' }}>
-          <img
-            src="desiverse-logo.png"
-            alt=""
-            style={{ width: '100%', objectFit: 'cover' }}
-          />
-        </Box>
+        <Grid
+          container
+          sx={{
+            display: { xs: 'none', lg: 'flex' },
+            alignItems: 'center',
+            justifyContent: 'center',
+          }}
+        >
+          <Grid item xs={12} md={5}>
+            <Box>
+              <img
+                src="img/truck.gif  "
+                alt=""
+                style={{ width: '100%', objectFit: 'cover' }}
+              />
+            </Box>
+          </Grid>
+          <Grid item xs={12} md={7}>
+            <Box
+              sx={{
+                display: 'flex',
+                alignItems: 'center',
+                flexDirection: 'column',
+              }}
+            >
+              <Box sx={{ width: '400px' }}>
+                <img
+                  src="desiverse-logo.png"
+                  alt=""
+                  style={{ width: '100%', objectFit: 'cover' }}
+                />
+              </Box>
+              <Box
+                sx={{
+                  display: 'flex',
+                  flexWrap: 'wrap',
+                  gap: '10px',
+                }}
+              >
+                {['Days', 'Hours', 'Minutes', 'Seconds'].map((item) => (
+                  <Box
+                    sx={{
+                      width: '150px',
+                      border: '5px solid #000',
+                      borderRadius: '9px',
+                      p: '30px',
+                      textAlign: 'center',
+                      '&:hover': {
+                        border: '5px dotted #000',
+                      },
+                    }}
+                    key={item}
+                  >
+                    <p
+                      style={{
+                        color: '#ed1c2d',
+                        lineHeight: '40px',
+                        fontSize: '40px',
+                      }}
+                    >
+                      00
+                    </p>
+                    <p>{item}</p>
+                  </Box>
+                ))}
+              </Box>
+            </Box>
+          </Grid>
+        </Grid>
       </Box>
       <Box sx={{ display: { xs: 'block', lg: 'none' }, width: '300px' }}>
         <img

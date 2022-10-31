@@ -41,7 +41,7 @@ const Register = ({ currentAccount, connectWalletAction }) => {
           >
             <Box sx={{ mb: '20px' }}>
               <img
-                src="img/founder-pass.png"
+                src="img/founder-pass.gif"
                 alt=""
                 style={{ width: '58%', objectFit: 'cover' }}
               />
