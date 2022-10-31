@@ -7,13 +7,14 @@ const Header = () => {
       title: 'HOME',
       link: '#home',
     },
-    {
-      title: 'UNIQUE AVATARS',
-      link: '#avatars',
-    },
+
     {
       title: 'DESIVERSE',
       link: '#desiverse',
+    },
+    {
+      title: 'FOUNDERS CLUB',
+      link: '#founders',
     },
   ];
   return (
@@ -43,8 +44,8 @@ const Header = () => {
             underline="none"
             sx={{
               color: '#fff',
-              fontSize: '15px',
-              fontWeight: 'bold',
+              fontSize: '16px',
+              letterSpacing: { lg: '3px' },
               '&:hover': {
                 color: '#eda50e',
               },

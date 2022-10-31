@@ -1,9 +1,11 @@
 import { Box, Grid, Typography } from '@mui/material';
 import React from 'react';
+import { ThemeProvider } from '@mui/material/styles';
+import { headingTheme } from './themeFonts';
 
 const MidSection = () => {
   return (
-    <Box>
+    <Box id="desiverse">
       <Box
         sx={{
           //   paddingTop: { xs: '120px', lg: '300px' },
@@ -22,23 +24,23 @@ const MidSection = () => {
         >
           <Grid item xs={12} lg={6}>
             <Box sx={{ mt: '30px', textAlign: { xs: 'center', lg: 'left' } }}>
-              <Typography
-                variant="h4"
-                sx={{ color: 'white', fontWeight: 'bold' }}
-              >
-                WHAT ARE
-              </Typography>
-              <Typography
-                variant="h4"
-                sx={{ color: '#eda50e', fontWeight: 'bold' }}
-              >
-                THE DOGGIES?
-              </Typography>
-              <Typography variant="body1" sx={{ color: '#BDC0C2' }}>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque
-                velit, facere magni provident architecto quidem sint inventore
-                magnam quia amet dicta officia, eum accusantium distinctio,
-                excepturi deserunt commodi officiis fugit.
+              <ThemeProvider theme={headingTheme}>
+                <Typography variant="h4" sx={{ color: 'white' }}>
+                  INTRODUCING
+                </Typography>
+                <Typography variant="h4" sx={{ color: '#eda50e' }} gutterBottom>
+                  DESIVERSE
+                </Typography>
+              </ThemeProvider>
+              <Typography variant="h6" sx={{ color: '#BDC0C2' }}>
+                What is desi you ask?? Desi is a slang used to identify the
+                people of the subcontinent. We Present to you a glimpse of our
+                culture through a traditional experience in the metaverse. A
+                Desi themed space where all the famous and authentic Desi
+                artifacts are showcased in a cool way for everyone to
+                experience. The world is a canvas for endless possibilities like
+                treasure hunts, events, concerts etc. for our community to
+                express themselves.
               </Typography>
             </Box>
           </Grid>

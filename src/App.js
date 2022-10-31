@@ -5,6 +5,7 @@ import Register from './components/Register';
 import UniqueAvatars from './components/UniqueAvatars';
 import React, { useEffect, useState } from 'react';
 import Footer from './components/Footer';
+import Partners from './components/Partners';
 
 function App() {
   const [currentAccount, setCurrentAccount] = useState(null);
@@ -71,6 +72,7 @@ function App() {
         currentAccount={currentAccount}
         connectWalletAction={connectWalletAction}
       />
+      <Partners />
       <Footer />
     </div>
   );

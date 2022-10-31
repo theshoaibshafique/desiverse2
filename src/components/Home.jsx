@@ -1,7 +1,9 @@
-import { Box } from '@mui/material';
+import { Box, Typography } from '@mui/material';
 import React from 'react';
 // import Avatars from './Avatars';
 import Header from './Header';
+import { ThemeProvider } from '@mui/material/styles';
+import { headingTheme } from './themeFonts';
 
 const Home = () => {
   // const avatarsList = [
@@ -61,36 +63,40 @@ const Home = () => {
         ))} */}
         <Box>
           <img
-            src="img/allcharacters.gif  "
+            src="img/truck.gif  "
             alt=""
             style={{ width: '100%', objectFit: 'cover' }}
           />
         </Box>
-        <Box>
-          <img src="desiverse-logo.png" alt="" />
+        <Box sx={{ width: '500px' }}>
+          <img
+            src="desiverse-logo.png"
+            alt=""
+            style={{ width: '100%', objectFit: 'cover' }}
+          />
         </Box>
       </Box>
       <Box sx={{ display: { xs: 'block', lg: 'none' }, width: '300px' }}>
         <img
-          src="img/allcharacters.gif  "
+          src="img/truck.gif  "
           alt=""
           style={{ width: '100%', objectFit: 'cover' }}
         />
       </Box>
-      {/* <Box
-        sx={{ maxWidth: '800px', mt: '40px', mb: { xs: '170px', lg: '330px' } }}
-      >
-        <Typography variant="h3" sx={{ fontWeight: 'bold' }}>
+      <Box sx={{ maxWidth: '800px', mb: { xs: '170px', lg: '100px' } }}>
+        {/* <Typography variant="h3" sx={{ fontWeight: 'bold' }}>
           10K NEXT-GENERATION,
         </Typography>
         <Typography variant="h3" sx={{ fontWeight: 'bold', color: 'black' }}>
           METAVERSE AVATARS
-        </Typography>
-        <Typography variant="body1" sx={{ color: 'black' }}>
-          Unique, hand-crafted, and playable The Doggies are coming to The
-          Sandbox. Designed and crafted with tha Doggfather himself.
-        </Typography>
-      </Box> */}
+        </Typography> */}
+        <ThemeProvider theme={headingTheme}>
+          <Typography variant="h5" sx={{ color: 'black' }}>
+            We are the answer to all which search desi content in the metaverse.
+            We strive to digitize our Desi culture on to web 3.0.
+          </Typography>
+        </ThemeProvider>
+      </Box>
       {/* <Box
         sx={{
           maxWidth: { xs: '350px', lg: '935px' },

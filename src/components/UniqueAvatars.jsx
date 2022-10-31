@@ -1,25 +1,27 @@
 import { Box, Grid, Typography } from '@mui/material';
 import React from 'react';
+import { ThemeProvider } from '@mui/material/styles';
+import { headingTheme } from './themeFonts';
 
 const UniqueAvatars = () => {
   const uitems = [
     {
-      title1: 'Dope',
-      title2: 'AVATARS',
+      title1: 'Traditional',
+      title2: 'Avatars ',
       img: 'img/uavat-1.gif',
       details:
         'A set of dope, fresh & funky avatars which have been custom designed by the teams at The Sandbox and Snoop Dogg himself. Only one exists of each, who will be the lucky one?',
     },
     {
-      title1: 'Dope',
-      title2: 'AVATARS',
+      title1: 'Traditional',
+      title2: 'Animals',
       img: 'img/uavat-2.gif',
       details:
         'A set of dope, fresh & funky avatars which have been custom designed by the teams at The Sandbox and Snoop Dogg himself. Only one exists of each, who will be the lucky one?',
     },
     {
-      title1: 'Dope',
-      title2: 'AVATARS',
+      title1: 'Traditional',
+      title2: 'Rides',
       img: 'img/uavat-3.gif',
       details:
         'A set of dope, fresh & funky avatars which have been custom designed by the teams at The Sandbox and Snoop Dogg himself. Only one exists of each, who will be the lucky one?',
@@ -39,21 +41,21 @@ const UniqueAvatars = () => {
       }}
     >
       <Box>
-        <Typography
-          variant="h3"
-          sx={{
-            color: '#f37a0e',
-            fontWeight: 'bold',
-            maxWidth: '480px',
-          }}
-        >
-          A CHANCE TO GET UNIQUE AVATARS
-        </Typography>
+        <ThemeProvider theme={headingTheme}>
+          <Typography
+            variant="h4"
+            sx={{
+              color: '#f37a0e',
+            }}
+            gutterBottom
+          >
+            Experience the Desi culture for the first time in metaverse
+          </Typography>
+        </ThemeProvider>
       </Box>
-      <Typography variant="body1" gutterBottom sx={{ color: '#BDC0C2' }}>
-        First-ever avatar to be part of a metaverse music video. Unique,
-        hand-crafted, and playable Doggies coming to The Sandbox. Designed and
-        crafted with tha Doggfather himself.
+      <Typography variant="h5" gutterBottom sx={{ color: '#BDC0C2' }}>
+        Enjoy our unique and magnificent culture of over 500 years old. Each
+        design is handmade, playabale and culture appropriate .
       </Typography>
       <Box sx={{ mt: '50px' }}>
         <Grid container spacing={2}>
@@ -87,22 +89,21 @@ const UniqueAvatars = () => {
                   </Box>
                 </Box>
                 <Box sx={{ mt: '40px' }}>
-                  <Typography
-                    variant="h3"
-                    sx={{ color: '#f37a0e', fontWeight: '600' }}
-                  >
-                    {item.title1}
-                  </Typography>
-                  <Typography
-                    variant="h3"
-                    sx={{ color: '#fff', fontWeight: '600' }}
-                    gutterBottom
-                  >
-                    {item.title2}
-                  </Typography>
-                  <Typography variant="body1" sx={{ color: '#BDC0C2' }}>
+                  <ThemeProvider theme={headingTheme}>
+                    <Typography variant="h5" sx={{ color: '#f37a0e' }}>
+                      {item.title1}
+                    </Typography>
+                    <Typography
+                      variant="h4"
+                      sx={{ color: '#fff' }}
+                      gutterBottom
+                    >
+                      {item.title2}
+                    </Typography>
+                  </ThemeProvider>
+                  {/* <Typography variant="body1" sx={{ color: '#BDC0C2' }}>
                     {item.details}
-                  </Typography>
+                  </Typography> */}
                 </Box>
               </Box>
             </Grid>
