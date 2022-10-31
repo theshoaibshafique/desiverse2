@@ -8,7 +8,7 @@ const Partners = () => {
     <Box sx={{ background: '#1d232a', textAlign: 'center', pb: '40px' }}>
       <ThemeProvider theme={headingTheme}>
         <Typography
-          variant="h3"
+          variant="h4"
           sx={{
             color: '#f37a0e',
           }}
@@ -29,7 +29,11 @@ const Partners = () => {
           <Link href="https://matesol.net/" target="_blank">
             <Avatar
               src="matesole-logo.png"
-              sx={{ bgcolor: '#fff', width: 200, height: 200 }}
+              sx={{
+                bgcolor: '#fff',
+                width: { xs: 150, lg: 200 },
+                height: { xs: 150, lg: 200 },
+              }}
             />
           </Link>
         </Box>
@@ -37,7 +41,7 @@ const Partners = () => {
           <Link href="https://www.halalverse.io/" target="_blank">
             <Avatar
               src="halalverse-logo.jpeg"
-              sx={{ width: 200, height: 200 }}
+              sx={{ width: { xs: 150, lg: 200 }, height: { xs: 150, lg: 200 } }}
             />
           </Link>
         </Box>
