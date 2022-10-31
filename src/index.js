@@ -30,7 +30,7 @@ let theme = createTheme({
 
   typography: {
     fontFamily: [
-      'pix-gamer',
+      'pix-emulator',
       // 'Montserrat,sans-serif',
       // '-apple-system',
       // 'BlinkMacSystemFont',

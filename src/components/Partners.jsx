@@ -13,7 +13,7 @@ const Partners = () => {
             color: '#f37a0e',
           }}
         >
-          Our Partners
+          Our Supporters
         </Typography>
       </ThemeProvider>
       <Box

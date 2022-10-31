@@ -53,7 +53,7 @@ const UniqueAvatars = () => {
           </Typography>
         </ThemeProvider>
       </Box>
-      <Typography variant="h5" gutterBottom sx={{ color: '#BDC0C2' }}>
+      <Typography variant="body1" gutterBottom sx={{ color: '#BDC0C2' }}>
         Enjoy our unique and magnificent culture of over 500 years old. Each
         design is handmade, playabale and culture appropriate .
       </Typography>
@@ -90,12 +90,12 @@ const UniqueAvatars = () => {
                 </Box>
                 <Box sx={{ mt: '40px' }}>
                   <ThemeProvider theme={headingTheme}>
-                    <Typography variant="h5" sx={{ color: '#f37a0e' }}>
+                    <Typography variant="h5" sx={{ color: '#BDC0C2' }}>
                       {item.title1}
                     </Typography>
                     <Typography
                       variant="h4"
-                      sx={{ color: '#fff' }}
+                      sx={{ color: '#f37a0e' }}
                       gutterBottom
                     >
                       {item.title2}

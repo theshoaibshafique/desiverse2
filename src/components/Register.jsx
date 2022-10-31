@@ -50,13 +50,17 @@ const Register = ({ currentAccount, connectWalletAction }) => {
               <ThemeProvider theme={headingTheme}>
                 <Typography
                   variant="h4"
-                  sx={{ color: '#fff', fontWeight: 'bold' }}
+                  sx={{ color: '#BDC0C2', fontWeight: 'bold' }}
                   gutterBottom
                 >
                   FOUNDER PASS
                 </Typography>
               </ThemeProvider>
-              <Typography variant="h6" gutterBottom sx={{ color: '#BDC0C2' }}>
+              <Typography
+                variant="body1"
+                gutterBottom
+                sx={{ color: '#BDC0C2' }}
+              >
                 The Founder pass gives you access to the Desiverse Metaverse
                 Experiences before anyone else. Become a part of the
                 development, give your feedback, enter Desiverse!
@@ -69,7 +73,7 @@ const Register = ({ currentAccount, connectWalletAction }) => {
                     <ListItemIcon>
                       <CircleIcon sx={{ fontSize: '10px' }} />
                     </ListItemIcon>
-                    <ListItemText>{i}</ListItemText>
+                    <ListItemText sx={{ fontSize: '16px' }}>{i}</ListItemText>
                   </ListItem>
                 ))}
               </List>
@@ -93,18 +97,30 @@ const Register = ({ currentAccount, connectWalletAction }) => {
                 style={{ width: '80%', objectFit: 'cover' }}
               />
             </Box>
-            <ThemeProvider theme={headingTheme}>
-              <Box>
-                <Typography variant="body1" sx={{ color: '#fff' }} gutterBottom>
-                  Become a Founder of DesiverseDAO by getting the Founder’s pass
-                  with amazing perks
-                </Typography>
-              </Box>
-            </ThemeProvider>
+
+            <Box>
+              <Typography
+                variant="body1"
+                gutterBottom
+                sx={{ color: '#BDC0C2', mb: '20px' }}
+              >
+                We are the answer to all which search desi content in the
+                metaverse. We strive to digitize our Desi culture on to web 3.0.
+              </Typography>
+              <Typography
+                variant="body1"
+                gutterBottom
+                sx={{ color: '#BDC0C2' }}
+              >
+                Become a Founder of DesiverseDAO by getting the Founder’s pass
+                with amazing perks
+              </Typography>
+            </Box>
+
             <Box>
               <Box sx={{ mt: '60px' }}>
                 <Link
-                  href="https://opensea.io/desiverse"
+                  href="https://opensea.io/collection/desiverse-founders-pass"
                   target="_blank"
                   sx={{
                     color: '#fff',

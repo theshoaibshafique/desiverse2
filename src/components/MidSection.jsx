@@ -25,14 +25,14 @@ const MidSection = () => {
           <Grid item xs={12} lg={6}>
             <Box sx={{ mt: '30px', textAlign: { xs: 'center', lg: 'left' } }}>
               <ThemeProvider theme={headingTheme}>
-                <Typography variant="h4" sx={{ color: 'white' }}>
+                <Typography variant="h4" sx={{ color: '#BDC0C2' }}>
                   INTRODUCING
                 </Typography>
                 <Typography variant="h4" sx={{ color: '#eda50e' }} gutterBottom>
                   DESIVERSE
                 </Typography>
               </ThemeProvider>
-              <Typography variant="h6" sx={{ color: '#BDC0C2' }}>
+              <Typography variant="body1" sx={{ color: '#BDC0C2' }}>
                 What is desi you ask?? Desi is a slang used to identify the
                 people of the subcontinent. We Present to you a glimpse of our
                 culture through a traditional experience in the metaverse. A

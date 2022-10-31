@@ -90,12 +90,6 @@ const Home = () => {
         <Typography variant="h3" sx={{ fontWeight: 'bold', color: 'black' }}>
           METAVERSE AVATARS
         </Typography> */}
-        <ThemeProvider theme={headingTheme}>
-          <Typography variant="h5" sx={{ color: 'black' }}>
-            We are the answer to all which search desi content in the metaverse.
-            We strive to digitize our Desi culture on to web 3.0.
-          </Typography>
-        </ThemeProvider>
       </Box>
       {/* <Box
         sx={{

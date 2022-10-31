@@ -9,6 +9,10 @@
   font-family: pix-gamer;
   src: url(/public/PixgamerRegular.ttf);
 }
+@font-face {
+  font-family: pix-emulator;
+  src: url(/public/PixelEmulator.ttf);
+}
 
 html {
   scroll-behavior: smooth;
