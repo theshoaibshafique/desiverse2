@@ -1,9 +1,9 @@
-import { Box, Typography } from '@mui/material';
+import { Box } from '@mui/material';
 import React from 'react';
 // import Avatars from './Avatars';
 import Header from './Header';
-import { ThemeProvider } from '@mui/material/styles';
-import { headingTheme } from './themeFonts';
+// import { ThemeProvider } from '@mui/material/styles';
+// import { headingTheme } from './themeFonts';
 
 const Home = () => {
   // const avatarsList = [
