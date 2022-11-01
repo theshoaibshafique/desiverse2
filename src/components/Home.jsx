@@ -106,7 +106,7 @@ const Home = () => {
                       width: '150px',
                       border: '5px solid #000',
                       borderRadius: '9px',
-                      p: '30px',
+                      p: '15px 20px',
                       textAlign: 'center',
                       '&:hover': {
                         border: '5px dotted #000',
@@ -117,8 +117,7 @@ const Home = () => {
                     <p
                       style={{
                         color: '#ed1c2d',
-                        lineHeight: '40px',
-                        fontSize: '40px',
+                        fontSize: '24px',
                       }}
                     >
                       00
