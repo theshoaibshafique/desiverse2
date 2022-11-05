@@ -108,16 +108,17 @@ const Register = ({ currentAccount, connectWalletAction }) => {
                 gutterBottom
                 sx={{ color: '#BDC0C2', mb: '20px' }}
               >
-                We are the answer to all which search desi content in the
-                metaverse. We strive to digitize our Desi culture on to web 3.0.
+                We are the answer to all which search desi digital content in
+                the internet. We strive to digitize our Desi culture to make it
+                accessible for everybody on planet Earth, Moon and Mars.
               </Typography>
               <Typography
                 variant="body1"
                 gutterBottom
                 sx={{ color: '#BDC0C2' }}
               >
-                Become a Founder of DesiverseDAO by getting the Founder’s pass
-                with amazing perks
+                Finally a bit of FOMO? Become a Founder of DesiverseDAO by
+                getting the Founder`s pass!
               </Typography>
             </Box>
 
