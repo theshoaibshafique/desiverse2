@@ -33,14 +33,17 @@ const MidSection = () => {
                 </Typography>
               </ThemeProvider>
               <Typography variant="body1" sx={{ color: '#BDC0C2' }}>
-                What is desi you ask?? Desi is a slang used to identify the
-                people of the subcontinent. We Present to you a glimpse of our
-                culture through a traditional experience in the metaverse. A
-                Desi themed space where all the famous and authentic Desi
-                artifacts are showcased in a cool way for everyone to
-                experience. The world is a canvas for endless possibilities like
-                treasure hunts, events, concerts etc. for our community to
-                express themselves.
+                <span style={{ fontWeight: 'bold', fontSize: '24px' }}>
+                  What is desi??
+                </span>{' '}
+                A slang used to identify the people of of India, Pakistan and
+                Bangladesh(The subcontinent). You get a glimpse of our culture -
+                for the very first time as digital assets in web3. Our desi
+                designs reflects famous and authentic Desi artifacts -
+                borderless, transparent and packed with an overload of
+                happiness. We access the metaverse to bring you endless gaming
+                possibilities like treasure hunts, events and awesome
+                memberships. Be part of of it, express yourself.
               </Typography>
             </Box>
           </Grid>

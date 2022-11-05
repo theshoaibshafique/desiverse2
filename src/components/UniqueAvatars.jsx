@@ -49,13 +49,14 @@ const UniqueAvatars = () => {
             }}
             gutterBottom
           >
-            Experience the Desi culture for the first time in metaverse
+            500 years culture packed in pixels
           </Typography>
         </ThemeProvider>
       </Box>
       <Typography variant="body1" gutterBottom sx={{ color: '#BDC0C2' }}>
-        Enjoy our unique and magnificent culture of over 500 years old. Each
-        design is handmade, playabale and culture appropriate .
+        Each avatar is handmade, playabale and culturual appropriate - lets make
+        it accessible for everybody in the world. Our vision of the global Desi
+        Metaverse.
       </Typography>
       <Box sx={{ mt: '50px' }}>
         <Grid container spacing={2}>

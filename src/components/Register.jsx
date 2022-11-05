@@ -15,11 +15,11 @@ import { headingTheme } from './themeFonts';
 
 const Register = ({ currentAccount, connectWalletAction }) => {
   const founderBenifits = [
-    'This is an entry ticket to to the Desiverse exclusive Founders club. ',
-    'Founders pass will allow the holders to be whitelisted for all the future content/NFT drops.',
-    'Lifetime access to all the upcoming events in the metaverse by Desiverse.',
-    'Holders will be able to rent their Pass to new members.',
-    'Exclusive sessions with the Founder and the team to learn more about the journey and the vision.',
+    'Your entry ticket to the Desi future in web3.',
+    'Exclusive founders pass holders have the priviligeto be whitelisted for any new digital drops.',
+    'The founders pass NFT holder has lifetime access to all benefits and club amenities  ',
+    'Holders will be able to rent their Pass to family members, invite them to join you.',
+    'Founder-2-Founder sessions. You are like a co-founder to us, so you meet and greet the founders team to create the future together. .',
   ];
   return (
     <Box
@@ -61,9 +61,13 @@ const Register = ({ currentAccount, connectWalletAction }) => {
                 gutterBottom
                 sx={{ color: '#BDC0C2' }}
               >
-                The Founder pass gives you access to the Desiverse Metaverse
-                Experiences before anyone else. Become a part of the
-                development, give your feedback, enter Desiverse!
+                Become the status of a Co-Founder and start our community as
+                literally the very very first. The Founder’ pass gives you a
+                life time full access to all priorities happening in the
+                Desiverse Metaverse, ass long as you hold it in your wallet :-)
+                the one and only founderpass round is limited to 3333 - there
+                are 1.7 bil people living in the Desi subcontintnet - be part of
+                the 0.0000001% founders pass holders - today + your lifetime.
               </Typography>
             </Box>
             <Box>
