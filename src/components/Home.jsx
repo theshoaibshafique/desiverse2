@@ -103,6 +103,7 @@ const Home = () => {
                   gap: '10px',
                   justifyContent: 'center',
                   alignItems: 'center',
+                  maxWidth: '400px',
                 }}
               >
                 {counter.map((item) => (
