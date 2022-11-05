@@ -30,7 +30,7 @@ const Header = () => {
         sx={{
           // display: { xs: 'none', lg: 'flex' },
           display: 'flex',
-          gap: { xs: '45px', lg: '200px' },
+          gap: { xs: '25px', lg: '200px' },
           mt: '40px',
           p: { xs: '20px 10px', lg: '20px 100px' },
           borderTop: '2px solid #eda50e',
@@ -44,7 +44,7 @@ const Header = () => {
             underline="none"
             sx={{
               color: '#fff',
-              fontSize: '18px',
+              fontSize: { xs: '16px', lg: '18px' },
               letterSpacing: { lg: '3px' },
               '&:hover': {
                 color: '#eda50e',

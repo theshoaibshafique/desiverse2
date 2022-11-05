@@ -37,8 +37,8 @@ const MidSection = () => {
                   What is desi??
                 </span>{' '}
                 A slang used to identify the people of of India, Pakistan and
-                Bangladesh(The subcontinent). You get a glimpse of our culture -
-                for the very first time as digital assets in web3. Our desi
+                Bangladesh (The subcontinent). You get a glimpse of our culture
+                - for the very first time as digital assets in web3. Our desi
                 designs reflects famous and authentic Desi artifacts -
                 borderless, transparent and packed with an overload of
                 happiness. We access the metaverse to bring you endless gaming

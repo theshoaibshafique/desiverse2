@@ -4,35 +4,36 @@ import React from 'react';
 import Header from './Header';
 // import { ThemeProvider } from '@mui/material/styles';
 // import { headingTheme } from './themeFonts';
+import { useTimer } from 'react-timer-hook';
 
 const Home = () => {
-  // const avatarsList = [
-  //   {
-  //     id: 1,
-  //     img: 'img/horse.png',
-  //     gif: 'img/horse.gif',
-  //   },
-  //   {
-  //     id: 2,
-  //     img: 'img/man.png',
-  //     gif: 'img/man.gif',
-  //   },
-  //   {
-  //     id: 3,
-  //     img: 'img/woman.png',
-  //     gif: 'img/women.gif',
-  //   },
-  //   {
-  //     id: 4,
-  //     img: 'img/riksha.png',
-  //     gif: 'img/riksha.gif',
-  //   },
-  //   {
-  //     id: 5,
-  //     img: 'img/truck.png',
-  //     gif: 'img/truck.gif',
-  //   },
-  // ];
+  const time = new Date('2022-11-18');
+  const expiryTimestamp = time.setSeconds(time.getSeconds());
+
+  const { seconds, minutes, hours, days } = useTimer({
+    expiryTimestamp,
+    onExpire: () => console.warn('onExpire called'),
+  });
+
+  const counter = [
+    {
+      title: 'Days',
+      value: days,
+    },
+    {
+      title: 'Hours',
+      value: hours,
+    },
+    {
+      title: 'Minutes',
+      value: minutes,
+    },
+    {
+      title: 'Seconds',
+      value: seconds,
+    },
+  ];
+
   return (
     <Box
       id="#home"
@@ -51,25 +52,24 @@ const Home = () => {
       <Header />
       <Box
         sx={{
-          display: { xs: 'none', lg: 'flex' },
+          display: 'flex',
           alignItems: 'center',
           justifyContent: 'center',
-          gap: '100px',
-          mt: '20px',
+
+          px: { xs: '20px', lg: '100px' },
+          mt: { lg: '-40px' },
+          width: '100%',
         }}
       >
-        {/* {avatarsList.map((item) => (
-          <Avatars item={item} key={item.id} />
-        ))} */}
         <Grid
           container
           sx={{
-            display: { xs: 'none', lg: 'flex' },
+            display: 'flex',
             alignItems: 'center',
             justifyContent: 'center',
           }}
         >
-          <Grid item xs={12} md={5}>
+          <Grid item xs={12} md={6}>
             <Box>
               <img
                 src="img/truck.gif  "
@@ -78,12 +78,15 @@ const Home = () => {
               />
             </Box>
           </Grid>
-          <Grid item xs={12} md={7}>
+          <Grid item xs={12} md={6}>
             <Box
               sx={{
                 display: 'flex',
                 alignItems: 'center',
                 flexDirection: 'column',
+                justifyContent: 'center',
+
+                mt: { xs: '-80px', lg: '0px' },
               }}
             >
               <Box sx={{ width: '400px' }}>
@@ -98,21 +101,23 @@ const Home = () => {
                   display: 'flex',
                   flexWrap: 'wrap',
                   gap: '10px',
+                  justifyContent: 'center',
+                  alignItems: 'center',
                 }}
               >
-                {['Days', 'Hours', 'Minutes', 'Seconds'].map((item) => (
+                {counter.map((item) => (
                   <Box
+                    key={item.title}
                     sx={{
                       width: '150px',
                       border: '5px solid #000',
                       borderRadius: '9px',
-                      p: '15px 20px',
+                      p: '0px',
                       textAlign: 'center',
                       '&:hover': {
                         border: '5px dotted #000',
                       },
                     }}
-                    key={item}
                   >
                     <p
                       style={{
@@ -120,9 +125,9 @@ const Home = () => {
                         fontSize: '24px',
                       }}
                     >
-                      00
+                      {item.value}
                     </p>
-                    <p>{item}</p>
+                    <p>{item.title}</p>
                   </Box>
                 ))}
               </Box>
@@ -130,13 +135,13 @@ const Home = () => {
           </Grid>
         </Grid>
       </Box>
-      <Box sx={{ display: { xs: 'block', lg: 'none' }, width: '300px' }}>
+      {/* <Box sx={{ display: { xs: 'block', lg: 'none' }, width: '300px' }}>
         <img
           src="img/truck.gif  "
           alt=""
           style={{ width: '100%', objectFit: 'cover' }}
         />
-      </Box>
+      </Box> */}
       <Box sx={{ maxWidth: '800px', mb: { xs: '170px', lg: '100px' } }}>
         {/* <Typography variant="h3" sx={{ fontWeight: 'bold' }}>
           10K NEXT-GENERATION,
