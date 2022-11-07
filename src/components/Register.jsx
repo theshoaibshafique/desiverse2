@@ -64,7 +64,7 @@ const Register = ({ currentAccount, connectWalletAction }) => {
                 Become the status of a Co-Founder and start our community as
                 literally the very very first. The Founder’ pass gives you a
                 life time full access to all priorities happening in the
-                Desiverse Metaverse, ass long as you hold it in your wallet :-)
+                Desiverse Metaverse, as long as you hold it in your wallet :-)
                 the one and only founderpass round is limited to 3333 - there
                 are 1.7 bil people living in the Desi subcontintnet - be part of
                 the 0.0000001% founders pass holders - today + your lifetime.

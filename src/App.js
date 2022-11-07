@@ -6,8 +6,11 @@ import UniqueAvatars from './components/UniqueAvatars';
 import React, { useEffect, useState } from 'react';
 import Footer from './components/Footer';
 import Partners from './components/Partners';
+import ReactGA from 'react-ga';
 
 function App() {
+  ReactGA.initialize('G-GC5W7DQCFX');
+
   const [currentAccount, setCurrentAccount] = useState(null);
 
   const checkIfWalletIsConnected = async () => {
@@ -61,6 +64,7 @@ function App() {
 
   useEffect(() => {
     checkIfWalletIsConnected();
+    ReactGA.pageview(window.location.pathname + window.location.search);
   }, []);
 
   return (
