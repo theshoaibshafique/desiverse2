@@ -34,6 +34,7 @@ const Partners = () => {
                 width: { xs: 150, lg: 200 },
                 height: { xs: 150, lg: 200 },
               }}
+              alt="matesol-logo"
             />
           </Link>
         </Box>
@@ -42,6 +43,7 @@ const Partners = () => {
             <Avatar
               src="halalverse-logo.jpeg"
               sx={{ width: { xs: 150, lg: 200 }, height: { xs: 150, lg: 200 } }}
+              alt="halalverse-logo"
             />
           </Link>
         </Box>

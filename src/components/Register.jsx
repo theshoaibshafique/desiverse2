@@ -42,7 +42,7 @@ const Register = ({ currentAccount, connectWalletAction }) => {
             <Box sx={{ mb: '20px' }}>
               <img
                 src="img/founder-pass.gif"
-                alt=""
+                alt="desiverse"
                 style={{ width: '58%', objectFit: 'cover' }}
               />
             </Box>
@@ -97,7 +97,7 @@ const Register = ({ currentAccount, connectWalletAction }) => {
             <Box sx={{ mb: '20px' }}>
               <img
                 src="img/reg-av.gif"
-                alt=""
+                alt="desiverse"
                 style={{ width: '80%', objectFit: 'cover' }}
               />
             </Box>

@@ -73,7 +73,7 @@ const Home = () => {
             <Box>
               <img
                 src="img/truck.gif  "
-                alt=""
+                alt="desiverse"
                 style={{ width: '100%', objectFit: 'cover' }}
               />
             </Box>
@@ -92,7 +92,7 @@ const Home = () => {
               <Box sx={{ width: '400px' }}>
                 <img
                   src="desiverse-logo.png"
-                  alt=""
+                  alt="desiverse-logo"
                   style={{ width: '100%', objectFit: 'cover' }}
                 />
               </Box>
@@ -136,21 +136,7 @@ const Home = () => {
           </Grid>
         </Grid>
       </Box>
-      {/* <Box sx={{ display: { xs: 'block', lg: 'none' }, width: '300px' }}>
-        <img
-          src="img/truck.gif  "
-          alt=""
-          style={{ width: '100%', objectFit: 'cover' }}
-        />
-      </Box> */}
-      <Box sx={{ maxWidth: '800px', mb: { xs: '170px', lg: '100px' } }}>
-        {/* <Typography variant="h3" sx={{ fontWeight: 'bold' }}>
-          10K NEXT-GENERATION,
-        </Typography>
-        <Typography variant="h3" sx={{ fontWeight: 'bold', color: 'black' }}>
-          METAVERSE AVATARS
-        </Typography> */}
-      </Box>
+
       {/* <Box
         sx={{
           maxWidth: { xs: '350px', lg: '935px' },

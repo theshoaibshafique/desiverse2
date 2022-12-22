@@ -51,7 +51,7 @@ const MidSection = () => {
             <Box>
               <img
                 src="img/allcharacters.gif"
-                alt=""
+                alt="desiverse"
                 style={{ width: '90%', objectFit: 'cover' }}
               />
             </Box>

@@ -56,7 +56,7 @@ const Header = () => {
         ))}
       </Box>
       {/* <Box>
-        <img src="desiverse-logo.png" alt="" />
+        <img src="desiverse-logo.png" alt="desiverse-logo" />
       </Box> */}
     </Box>
   );
